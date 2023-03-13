@@ -456,12 +456,18 @@ main .index {
 
 .categories {
   margin-block: 4rem;
+
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     h4 {
       cursor: pointer;
